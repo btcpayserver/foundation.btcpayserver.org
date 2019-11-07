@@ -12,12 +12,8 @@
   --light-shadow: rgba(12, 0, 68, 0.1);
   --white: #ffffff;
   --black-text: rgb(43, 66, 51);
-  /*  */
-
- --lime-green: #cedc21;
-  /* --black: #000; */
+  --lime-green: #cedc21;
   --jade-green: #41dc69;
-  /* --emerald-green-emphasis: #70ff53; */
   --emerald-green: #51b13e;
 }
 
@@ -66,14 +62,9 @@
   --shadow: rgba(255, 255, 255, 0.2);
   --light-shadow: rgba(255, 255, 255, 0.1);
   --black-text: rgb(105, 139, 111);
-  /*  */
-
   --lime-green: #cedc21;
-  /* --black: rgb(216, 216, 216); */
   --jade-green: #41dc69;
-  /* --emerald-green-emphasis: #70ff53; */
   --emerald-green: #51b13e;
-  /* transition: 1s ease; */
 }
 
 .-ab-trig-spec {
@@ -116,21 +107,22 @@
   display: grid;
   padding: 10px;
 }
-.-i-t *{
-  transition:0.2s
+.-i-t * {
+  transition: 0.2s;
 }
-.-i-t-n, .-i-t{
+.-i-t-n,
+.-i-t {
   text-decoration: none;
   color: var(--black-text);
 }
-.-i-t:hover svg{
-  transform: translate(0px,-4px);
+.-i-t:hover svg {
+  transform: translate(0px, -4px);
 }
-.-i-t-n{
+.-i-t-n {
   margin: 1rem 0;
   padding-bottom: 4px;
 }
-.-i-t:hover .-i-t-n{
+.-i-t:hover .-i-t-n {
   border-bottom: 1px solid;
   padding-bottom: 3px;
 }
@@ -139,7 +131,14 @@
   max-height: 100px;
   max-width: 100px;
 }
-
+.supporters-flex {
+  display: inline-flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 4rem;
+}
 .-bg-l {
   background: var(--green-highlight-text);
 }
@@ -199,7 +198,7 @@ textarea {
 }
 
 .button-arrangeer a:hover,
-.button-arrangeer ~a.secondary-action:hover {
+.button-arrangeer ~ a.secondary-action:hover {
   border-color: var(--dark-green);
   background: var(--dark-green);
   color: var(--white);
@@ -207,14 +206,16 @@ textarea {
   transform: translateY(-3px);
 }
 
-
-
 /* END APPEND */
 .alert {
   text-align: left;
 }
 
-.formio-form-wrapper.formio-modified .alert.alert-success  +div.formio-component{ display:none; }
+.formio-form-wrapper.formio-modified
+  .alert.alert-success
+  + div.formio-component {
+  display: none;
+}
 
 .contact-form {
   display: grid;
@@ -276,7 +277,7 @@ body,
     sans-serif;
   background: var(--white);
   color: var(--black-text);
-  transition: 0.5s ease;  
+  transition: 0.5s ease;
   overflow-x: hidden;
 }
 
@@ -436,7 +437,6 @@ content {
 }
 
 .menuItems a {
-  /* font-family: "Courier", serif; */
   text-decoration: none;
   color: var(--dark-green-text);
 }
@@ -456,12 +456,10 @@ content {
 }
 
 .heroic-content {
-  /* background: url(/src/images/btcpay-foundation-bg-01.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
   width: 100%;
-  /* background-color: var(--green-highlight-text); */
 }
 
 .heroic-content-inner h1,
@@ -516,7 +514,6 @@ p {
 }
 
 .general-text-block {
-  /* margin: 20px 0; */
   padding: 30px;
 }
 
@@ -546,7 +543,6 @@ p {
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 1fr 1fr;
-  /* row-gap: 50px; */
 }
 
 .iconic-trio {
@@ -568,7 +564,6 @@ p {
   background-position: 50% 0px;
   height: 400px;
   background-size: cover;
-  /* background-repeat: repeat-y; */
   animation: scrollBackground 30s linear forwards infinite;
 }
 
@@ -582,7 +577,6 @@ p {
 .page-content-payload {
   display: grid;
   grid-auto-flow: row;
-  /* align-content: center; */
   text-align: center;
   padding: 30px;
   border-radius: 20px;
@@ -646,7 +640,6 @@ p {
 }
 
 .quote-block p {
-  /* font-family: "Courier New", sans-serif; */
   font-size: 30px;
   padding: 0 20px;
 }
@@ -657,12 +650,6 @@ p {
   padding: 0 20px;
 }
 
-/* .quote-block i.fas, .quote-block i.fab, .quote-block i.far{
-  font-size: 50px;
-  padding: 0 20px;
-  text-align: left;
-  opacity: 0.5;
-} */
 .quote-block i.fas,
 .quote-block i.fab,
 .quote-block i.far {
@@ -750,21 +737,13 @@ footer {
 
 .footer-inner {
   padding: 1em;
-
   color: var(--dark-green-text);
-
   display: grid;
-
   display: var(--grid, grid);
-
   grid-template-columns: 1fr 1fr auto;
-
   grid-template-rows: 1fr auto;
-
   grid-column-gap: 20px;
-
   max-width: 1000px;
-
   margin: auto;
 }
 
