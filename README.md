@@ -7,7 +7,7 @@ The official website repository of the [BTCPay Server Foundation](https://founda
 Modify `index.html` directly, adding the following block to `supporters-flex`.
 
 ```
-<div class="-f -icon-t" style="height: 170px">
+<div class="-f -icon-t" style="height: 170px; order:{# number #}">
   <a href="{# URL #}" class="-i-t">
     <svg>{# SVG OR IMG #}</svg>
     <span class="-i-t-n">{# NAME #}</span>
