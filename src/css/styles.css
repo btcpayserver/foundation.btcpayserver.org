@@ -67,6 +67,64 @@
   --emerald-green: #51b13e;
 }
 
+
+/* IF HOST IS DARK MODE ENABLED */
+
+/* @media (prefers-color-scheme: dark) {
+  .-main-body-container-theme {
+    --dark-green: #12702e;
+    --dark-green-text: #0a612e;
+    --green-highlight-text: rgb(3, 22, 8);
+    --emerald-green-text: #357429;
+    --light-grey: rgb(29, 29, 29);
+    --lighter-grey: rgb(11, 11, 11);
+    --light-grey-text: rgb(120, 134, 128);
+    --jade-green-text: #27ad48;
+    --error: #460614;
+    --white: #000000;
+    --shadow: rgba(255, 255, 255, 0.2);
+    --light-shadow: rgba(255, 255, 255, 0.1);
+    --black-text: rgb(105, 139, 111);
+    --lime-green: #cedc21;
+    --jade-green: #41dc69;
+    --emerald-green: #51b13e;
+  }
+  .go_dark {
+    display: none;
+  }
+  .go_light {
+    display: unset;
+  }
+  #themeChangeTrigger:checked ~ .go_dark {
+    display: unset;
+  }
+  #themeChangeTrigger:checked ~ .go_light {
+    display: none;
+  }
+  #themeChangeTrigger:checked ~ .-main-body-container-theme {
+    --dark-green: #1e5344;
+    --dark-green-text: #0d382c;
+    --green-highlight-text: #e7f8e9;
+    --emerald-green-text: #306924;
+    --light-grey: #ddd;
+    --lighter-grey: #efefef;
+    --light-grey-text: rgb(160, 160, 160);
+    --jade-green-text: #1b7431;
+    --error: #ffecf0;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --light-shadow: rgba(12, 0, 68, 0.1);
+    --white: #ffffff;
+    --black-text: rgb(43, 66, 51);
+    --lime-green: #cedc21;
+    --jade-green: #41dc69;
+    --emerald-green: #51b13e;
+  }
+} */
+
+/* END HOST DARK MODE ENABLED */
+
+
+
 .-ab-trig-spec {
   position: absolute;
   z-index: 2;
