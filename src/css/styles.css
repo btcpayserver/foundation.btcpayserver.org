@@ -198,6 +198,10 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.supporters-flex .-i-t svg,
+.supporters-flex .-i-t img {
+  margin: auto;
+}
 .-bg-l {
   background: var(--green-highlight-text);
 }
