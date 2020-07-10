@@ -1,123 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <meta content="utf-8" http-equiv="encoding" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#51b13e" />
-    <meta name="msapplication-TileColor" content="#0f3b21" />
-    <meta name="theme-color" content="#ffffff" />
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="utf-8" http-equiv="encoding"/>
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#51b13e"/>
+  <meta name="msapplication-TileColor" content="#0f3b21"/>
+  <meta name="theme-color" content="#ffffff"/>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BTCPay Server Foundation",
+      "alternateName": "BTCPayServer Foundation",
+      "url": "https://foundation.btcpayserver.org/",
+      "logo": "https://foundation.btcpayserver.org/assets/meta.png",
+      "sameAs": [
+        "https://twitter.com/BtcpayServer",
+        "https://t.me/btcpayserver",
+        "http://chat.btcpayserver.org/"
+      ]
+    }
+  </script>
+  <script src="scripts/main.js"></script>
+  <link href="/styles/btcpayserver-variables.css" rel="stylesheet"/>
+  <link href="/styles/btcpayserver-bootstrap.css" rel="stylesheet"/>
+  <link href="/styles/btcpayserver-main.css" rel="stylesheet"/>
+</head>
+<body >
+<header class="navbar navbar-expand-sm btcpay-header">
 
-    <link href="/styles/btcpayserver-variables.css" rel="stylesheet" />
-    <link href="/styles/btcpayserver-bootstrap.css" rel="stylesheet" />
-    <link href="/styles/btcpayserver-main.css" rel="stylesheet" />
-  </head>
-  <body style="padding-top: 64px;">
-    <header class="fixed-top navbar navbar-expand-sm btcpay-header">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggler">
-        <a class="navbar-brand" href="#">BTCPay Foundation</a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Giving support</a>
-          </li>
-          
-          <li class="nav-item">
-            <button class="btcpay-theme-switch">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-              >
-                <path
-                  class="btcpay-theme-switch-dark"
+  <a class="navbar-brand" href="#">BTCPay Foundation</a>
+  <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <svg class="icon-button" xmlns="http://www.w3.org/2000/svg" width="33" height="29" viewBox="0 0 8 8">
+      <line id="cr3" fill="none" stroke="var(--btcpay-header-color)" stroke-width="1.5" stroke-linecap="round"
+            stroke-miterlimit="10" x1="1" y1="1" x2="7" y2="1"/>
+      <line id="cr2" fill="none" stroke="var(--btcpay-header-color)" stroke-width="1.5" stroke-linecap="round"
+            stroke-miterlimit="10" x1="1" y1="4" x2="7" y2="4"/>
+      <line id="cr1" fill="none" stroke="var(--btcpay-header-color)" stroke-width="1.5" stroke-linecap="round"
+            stroke-miterlimit="10" x1="1" y1="7" x2="7" y2="7"/>
+    </svg>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#membership">Become a supporter</a>
+      </li>
+      
+
+      <li class="nav-item">
+        <button class="btcpay-theme-switch">
+          <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+          >
+            <path class="btcpay-theme-switch-dark"
                   transform="translate(1 1)"
                   d="M2.72 0A3.988 3.988 0 000 3.78c0 2.21 1.79 4 4 4 1.76 0 3.25-1.14 3.78-2.72-.4.13-.83.22-1.28.22-2.21 0-4-1.79-4-4 0-.45.08-.88.22-1.28z"
-                />
-                <path
-                  class="btcpay-theme-switch-light"
+            />
+            <path class="btcpay-theme-switch-light"
                   transform="translate(1 1)"
                   d="M4 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5S4.28 0 4 0zM1.5 1c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm5 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM4 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM.5 3.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm7 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM1.5 6c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm5 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM4 7c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5S4.28 7 4 7z"
-                />
-              </svg>
-            </button>
-            <script src="/scripts/theme-switch.js"></script>
-            <noscript
-              ><style>
-                .btcpay-theme-switch {
-                  display: none;
-                }
-              </style></noscript
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="container">
-      <h2 class="mt-4 row text-center">Sustainable Support for BTCPay Server</h2>
-        <h4 class="row text-center">
-        Ensuring an open future for businesses and individuals regardless of geographic, political or financial barriers.</h4>
- <div class="row ">
-   <div class="d-flex justify-content-between">
-   <a href="about.html" class="btn btn-primary">About the Foundation</a>
-   <a href="#become-supporter" class="btn btn-primary">Become a supporter</a>
+            />
+          </svg>
+        </button>
+        <script src="/scripts/theme-switch.js"></script>
+        <noscript
+        >
+          <style>
+            .btcpay-theme-switch {
+              display: none;
+            }
+          </style>
+        </noscript
+        >
+      </li>
+    </ul>
   </div>
+</header>
+<main class="container">
+  <h1 class="mt-4 row text-center">Sustainable Support for BTCPay Server</h1>
+  <p class="row justify-content-center h5">
+    Ensuring an open future for businesses and individuals regardless of geographic, political or financial
+    barriers.</p>
+  <div class="mt-4 row justify-content-around">
+      <a href="about.html" class="btn btn-lg btn-outline-primary" style="margin-bottom: 0.5em ">About the Foundation</a>
+      <a href="#membership" class="btn btn-lg btn-outline-primary" style="max-height: 47px;">Become a supporter</a>
   </div>
-      <h2 class="row text-center">
-        Foundation Supporters
-      </h2>
-      <p class="row text-center">The BTCPay Server Project is proudly supported by these entities through the BTCPay Server Foundation</p>
-    </main>
-    <footer class="navbar fixed-bottom btcpay-footer">
-      <div class="btcpay-footer-columns">
-        <div>
-          <h6>Shortcuts</h6>
-          <ul>
-            <li><a href="about.html">About the Foundation</a></li>
-            <li>
-              <a href="https://btcpayserver.org"
-                >BTCPay Server</a
-              >
-            </li>
-            <li>
-              <a href="https://blog.btcpayserver.org">Blog</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h6>Documentation</h6>
-          <ul>
-            <li><a href="foundation-goals.html">Foundation Goals</a></li>
-            <li>
-              <a href="privacy-policy.html">Privacy Policy</a>
-            </li>
-            <li><a href="https://github.com/btcpayserver/">GitHub</a></li>
-          </ul>
-        </div>
-        <div>
-          <h6>Contact</h6>
-          <ul>
-            <li><a href="mailto:foundation@btcpayserver.org">foundation@btcpayserver.org</a></li>          </ul>
-        </div>
+  <hr id="supporters" />
+  <h1 class="row mt-4  justify-content-center">Foundation Supporters</h1>
+  <p class="row  justify-content-center">The BTCPay Server Project is proudly supported by these entities through the
+    BTCPay Server
+    Foundation</p>
+  <div class="row justify-content-center">
+    <div class="figure p-3">
+      <a href="https://kraken.com" target="_blank">
+        <img src="assets/kraken.svg" alt="Sponsor Kraken" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://kraken.com" class="text-muted small" target="_blank">Kraken</a>
       </div>
-      <p>
-        Content Released under MIT license.
-        <br />
-        This website does not use cookies nor collect personal data.
-      </p>
     </div>
-  </body>
+    <div class="figure p-3">
+      <a href="https://twitter.com/sqcrypto" target="_blank">
+        <img src="assets/squarecrypto.svg" alt="Sponsor Square Crypto" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://twitter.com/sqcrypto" class="text-muted small" target="_blank">Square Crypto</a>
+      </div>
+    </div>
+    <div class="figure p-3">
+      <a href="https://www.btse.com" target="_blank">
+        <img src="assets/btse.svg" alt="Sponsor BTSE" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://www.btse.com/" class="text-muted small" target="_blank">BTSE</a>
+      </div>
+    </div>
+    <div class="figure p-3">
+      <a href="https://www.dglab.com/en/" target="_blank">
+        <img src="assets/dglab.svg" alt="Sponsor DG lab" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://www.dglab.com/en/" class="text-muted small" target="_blank">DG Lab</a>
+      </div>
+    </div>
+    <div class="figure p-3">
+      <a href="https://www.okcoin.com/" target="_blank">
+        <img src="assets/okcoin.svg" alt="Sponsor OKCoin" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://www.okcoin.com/" class="text-muted small" target="_blank">OKCoin</a>
+      </div>
+    </div>
+    <div class="figure p-3">
+      <a href="https://acinq.co/" target="_blank">
+        <img src="assets/acinq-logo.svg" alt="Sponsor ACINQ" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://acinq.co/" class="text-muted small" target="_blank">ACINQ</a>
+      </div>
+    </div>
+    <div class="figure p-3">
+      <a href="https://lunanode.com/" target="_blank">
+        <img src="assets/lunanode.svg" alt="Sponsor LunaNode" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://lunanode.com/" class="text-muted small" target="_blank">LunaNode</a>
+      </div>
+    </div>
+    <div class="figure p-3">
+      <a href="https://walletofsatoshi.com/" target="_blank">
+        <img src="assets/walletofsatoshi.svg" alt="Sponsor Wallet of Satoshi" height="75"/>
+      </a>
+      <div class="figure-caption text-center">
+        <a href="https://walletofsatoshi.com/" class="text-muted small" target="_blank">Wallet of Satoshi</a>
+      </div>
+    </div>
+
+  </div>
+
+  <hr id="membership" />
+  <h1 class="row mt-4 justify-content-center" >Supporting the Foundation</h1>
+  <div class="row ">
+    <p>BTCPay Server realises the Bitcoin project's goal of making money accessible to financially-sovereign
+      individuals through world-class, open-source payment processing and direct access to the full bitcoin
+      network.</p>
+    <p>Development of this software has involved countless volunteered man-hours to not only produce the system
+      but also keep it up-to-date and compatible with bleeding-edge technology such as the Lightning Network
+      which extend the practical use of bitcoin even further.</p>
+    <p>BTCPay Server must be able to continue to provide the very best open-source software stack and your
+      contribution can make that happen.<br>Support from corporate entities will fuel the future development of
+      BTCPay Server and the roll out of new features and installation options.</p>
+    <p>Supporters of the BTCPay Server Foundation will be featured on our website and will
+      be helping to bolster the steady growth of bitcoin and BTCPay Server.</p>
+    <p>If you are interested in supporting the Foundation, please give us your contact information below and we
+      will be in touch.</p>
+  </div>
+  <hr/>
+  <h1 class="row mt-4 justify-content-center" id="contact-us">Business Contact details</h1>
+  <div class="contact-form">
+    <script
+            src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://zdleusgcgmezasc.form.io/btcpayserverfoundation"></script>
+    <noscript>
+      <a href="mailto:foundation@btcpayserver.org"> Contact us</a></noscript>
+    <span class="text-muted">By submitting this form, you agree to be contacted for the purposes of
+                becoming a supporter of the BTCPay Server Foundation as well as for marketing purposes as
+                per the guidelines in our communications policy.</span>
+  </div>
+</main>
+<footer class="navbar btcpay-footer mt-4">
+  <div class="btcpay-footer-columns">
+    <div>
+      <h6>Shortcuts</h6>
+      <ul>
+        <li><a href="about.html">About the Foundation</a></li>
+        <li>
+          <a href="https://btcpayserver.org">BTCPay Server</a>
+        </li>
+        <li>
+          <a href="https://blog.btcpayserver.org">Blog</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h6>Documentation</h6>
+      <ul>
+        <li><a href="foundation-goals.html">Foundation Goals</a></li>
+        <li>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li><a href="https://github.com/btcpayserver/">GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6>Contact</h6>
+      <ul>
+        <li><a href="#contact-us">Contact form</a></li>
+        <li><a href="https://chat.btcpayserver.org">Official chat</a></li>
+      </ul>
+    </div>
+  </div>
+  <p>
+    Content Released under MIT license.
+    <br/>
+    This website does not use cookies nor collect personal data.
+  </p>
+</footer>
+</body>
 </html>
