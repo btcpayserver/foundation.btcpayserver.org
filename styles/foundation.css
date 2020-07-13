@@ -1,0 +1,28 @@
+/* footer */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; }
+header { flex-shrink: 0; }
+footer { margin-top: auto; }
+
+
+@media (min-width: 576px) {
+  .nav-item {
+    padding-top: 4px;
+    margin-left: 5px;
+  }
+
+  .btcpay-theme-switch {
+    padding-top: 4px;
+  }
+
+  .nav-item a {
+    border-bottom: 2px solid transparent;
+    padding: 0 var(--btcpay-space-s) var(--btcpay-space-xs);
+  }
+
+  .nav-item a:hover,
+  .nav-item a:focus  {
+    color: var(--btcpay-header-color-link-accent);
+    border-bottom-color: var(--btcpay-header-color-link-accent);
+  }
+}
