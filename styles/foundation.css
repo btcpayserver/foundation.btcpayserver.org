@@ -1,0 +1,57 @@
+/* footer */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; }
+header { flex-shrink: 0; }
+footer { margin-top: auto; }
+
+/* general */
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main p,
+.content-wrap,
+.contact-form {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main hr {
+  max-width: 6em;
+  border-top-color: var(--btcpay-border-color-medium);
+}
+
+main h1 + p.h4,
+main h2 + p.h5 {
+  max-width: 28em;
+  line-height: 1.4;
+}
+
+main .btn-lg {
+  min-width: 13em;
+}
+
+@media (min-width: 576px) {
+  .nav-item {
+    padding-top: 4px;
+    margin-left: 5px;
+  }
+
+  .btcpay-theme-switch {
+    padding-top: 4px;
+  }
+
+  .nav-item a {
+    border-bottom: 2px solid transparent;
+    padding: 0 var(--btcpay-space-s) var(--btcpay-space-xs);
+  }
+
+  .nav-item a:hover,
+  .nav-item a:focus  {
+    color: var(--btcpay-header-color-link-accent);
+    border-bottom-color: var(--btcpay-header-color-link-accent);
+  }
+}
