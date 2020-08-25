@@ -45,6 +45,10 @@ main .supporters .figure {
   text-align: center;
 }
 
+main .supporters .figure-caption {
+  margin-top: 5px;
+}
+
 main .supporters img {
   width: 75px;
 }
