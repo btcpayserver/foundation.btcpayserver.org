@@ -70,7 +70,7 @@ main .supporters img {
 
   .nav-item a:hover,
   .nav-item a:focus  {
-    color: var(--btcpay-header-color-link-accent);
-    border-bottom-color: var(--btcpay-header-color-link-accent);
+    color: var(--btcpay-header-link-accent);
+    border-bottom-color: var(---btcpay-header-link-accent);
   }
 }
