@@ -12,9 +12,9 @@ npx http-server
 
 ```html
 <div class="figure p-3">
-  <a href="https://kraken.com" target="_blank" class="text-muted small">
-    <img src="assets/kraken.svg" alt="Sponsor Kraken" />
-    <div class="figure-caption">Kraken</div>
+  <a href="https://spiral.xyz" target="_blank" class="text-muted small">
+    <img src="assets/spiral.svg" alt="Sponsor Spiral" />
+    <div class="figure-caption">Spiral</div>
   </a>
 </div>
 ```
