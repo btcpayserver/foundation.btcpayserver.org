@@ -34,25 +34,6 @@ main .btn-lg {
   min-width: 13em;
 }
 
-main .supporters {
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main .supporters .figure {
-  flex-basis: 125px;
-  text-align: center;
-}
-
-main .supporters .figure-caption {
-  margin-top: 5px;
-}
-
-main .supporters img {
-  width: 75px;
-}
-
 @media (min-width: 576px) {
   .nav-item {
     padding-top: 4px;
@@ -73,4 +54,60 @@ main .supporters img {
     color: var(--btcpay-header-link-accent);
     border-bottom-color: var(---btcpay-header-link-accent);
   }
+}
+
+.supporters {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 1em 0;
+  text-align: center;
+}
+
+.supporters p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 32em;
+}
+
+.supporters .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.supporters .logos a {
+  color: var(--btcpay-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.supporters .logos svg {
+  max-height: 60px;
+
+  @media (max-width: 519px) {
+    max-height: 45px;
+  }
+}
+
+main .past-supporters {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .past-supporters .figure {
+  flex-basis: 125px;
+  text-align: center;
+}
+
+main .past-supporters .figure-caption {
+  margin-top: 5px;
+}
+
+main .past-supporters img {
+  width: 75px;
 }
